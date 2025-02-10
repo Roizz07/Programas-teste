@@ -124,7 +124,8 @@ int main()//sempre que uma função for concluida ela deve voltar para a main
 	     	printf("Escolha a opção desejada:\n\n");
 	        	 printf("\t1 - Registrar nomes \n");//\T faz dar um espaço na exibição
             	printf("\t2 - Consultar nomes \n");
-             	printf("\t3 - Excluir nomes \n\n");
+             	printf("\t3 - Excluir nomes \n");
+             	printf("\t4 - Sair do sistema \n\n");
              	printf("opção:");
          	scanf("%d",&opcao);//sacnf vai fazer o programa esperar ate uma resposta do usuario, %d vai dar espaço para que digite e &opcao vai armazenar a resposta dele
     	system ("cls");//vai limpar a tela    	
@@ -142,6 +143,10 @@ int main()//sempre que uma função for concluida ela deve voltar para a main
 			case 3:
 				deletar();
 			break;
+			
+			case 4:
+				printf("Obrigado por utilizar o sistema.\n");
+			return 0;//Retornar ao valor zero, quebrando tudo, fechando o sistema
 			
 			default:
 				printf("você não escolheu uma opção válida, por favor escolha entre as opções 1,2 e 3\n");
